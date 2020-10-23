@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>Result</thead>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Text</th>
+    </tr>
+    <tr th:each="article: ${articles}">
+        <td th:text="${article.id}"/>
+        <td th:text="${article.title}"/>
+        <td th:text="${article.text}"/>
+    </tr>
+</table>
+
+</body>
+</html>
